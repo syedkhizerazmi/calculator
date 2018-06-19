@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1>Calculator</h1>
+    <div class="main">
+        <form  name="form">
+            <input class="textview"  name="textview" placeholder="calculator">
+        </form>
+        <table>
+            <tr>
+                <td>
+                    <input type="button" class="clean" value="C" onclick="clean()">
+                </td>
+                <td>
+                    <input type="button" class="button sign" value="<" onclick="back()">
+                </td>
+                <td>
+                    <input type="button" class="button sign" value="/" onclick="insert('/')">
+                </td>
+                <td>
+                    <input type="button" class="button sign" value="x" onclick="insert('*')">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="button" class="button" value="7" onclick="insert('7')">
+                </td>
+                <td>
+                    <input type="button" class="button" value="8" onclick="insert('8')">
+                </td>
+                <td>
+                    <input type="button" class="button" value="9" onclick="insert('9')">
+                </td>
+                <td>
+                    <input type="button" class="button sign" value="-" onclick="insert('-')">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="button" class="button" value="4" onclick="insert('4')">
+                </td>
+                <td>
+                    <input type="button" class="button" value="5" onclick="insert('5')">
+                </td>
+                <td>
+                    <input type="button" class="button" value="6" onclick="insert('6')">
+                </td>
+                <td>
+                    <input type="button" class="button sign" value="+" onclick="insert('+')">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="button" class="button" value="1" onclick="insert('1')">
+                </td>
+                <td>
+                    <input type="button" class="button" value="2" onclick="insert('2')">
+                </td>
+                <td>
+                    <input type="button" class="button" value="3" onclick="insert('3')">
+                </td>
+                <td rowspan="5">
+                    <input type="button" style="height: 106px;" class="S equal" value="=" onclick="equal()">
+                </td>
+            </tr>
+
+            <tr>
+                 <td>
+                    <input type="button" class="button sign" value="." onclick="insert('.')">
+                </td>
+                <td colspan="2">
+                    <input type="button" style="width: 206px;" class="button" value="0" onclick="insert('0')">
+                </td>
+               
+            </tr>
+        </table>
+    </div>
+
+    <h2>Made By S.M Khizer  <span class="icon"> <i class="fas fa-heart"></i></span></h2>
+
+</body>
+
+</html>
